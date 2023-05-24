@@ -1,0 +1,394 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&family=Indie+Flower&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px 0;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.navbar-left-title {
+  padding-right: 30px;
+  font-family: "Indie flower";
+  font-size: 44px;
+  line-height: 40px;
+  text-decoration: none;
+  color: rgb(5, 61, 5);
+}
+
+.navbar-left-title:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  font-size: 18px;
+  color: grey;
+}
+
+.navbar-menu a:nth-child(1) {
+  color: black;
+  font-weight: 700;
+}
+
+.navbar-menu a:hover {
+  cursor: pointer;
+  color: green;
+}
+.navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-right i {
+  cursor: pointer;
+  color: green;
+  font-size: 20px;
+}
+
+.navbar-right i:hover {
+  transform: scale(1.2);
+  transition: 0.5s ease;
+}
+
+/* banner */
+
+.banner {
+  display: flex;
+  background-color: #c1dcdc;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.banner-left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 40px 0 40px 50px;
+  gap: 40px;
+  z-index: 1;
+}
+
+@media screen and (max-width: 980px) {
+  .banner-left-title {
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 20px;
+    padding: 10px;
+  }
+
+  .banner-left-content {
+    background-color: white;
+    opacity: 0.7;
+    border-radius: 20px;
+    padding: 15px;
+  }
+}
+
+.banner-left-title {
+  font-weight: 800;
+  font-size: 64px;
+  line-height: 64px;
+  width: 460px;
+}
+
+.banner-left-content {
+  display: flex;
+  gap: 50px;
+}
+
+.contents:nth-child(1) {
+  border-right: 1px solid black;
+  padding-right: 50px;
+}
+
+.contents p {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.contents span {
+  font-size: 18px;
+}
+
+.banner-left-search {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.banner-left-search input {
+  border: none;
+  outline: none;
+  width: 80%;
+  font-size: 18px;
+}
+
+.banner-left-search i {
+  background-color: #c1dcdc;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.banner-right {
+  width: 100%;
+  position: relative;
+}
+
+.banner-right-bg {
+  position: absolute;
+  background-color: gray;
+  width: 400px;
+  height: 360px;
+  bottom: 0;
+  right: 10%;
+  border-radius: 50% 20% 0 50%;
+}
+.banner-right-bg img {
+  width: 100%;
+  position: absolute;
+  top: -120px;
+  transform: scalex(-1);
+}
+
+/* products */
+
+.product {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+}
+
+.product-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  gap: 10px;
+  margin-top: 40px;
+}
+.more {
+  background-color: #c1dcdc;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.product-card {
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.product-cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.product-cards img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-cards p {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.product-cards span {
+  color: gray;
+  font-size: 18px;
+}
+
+/* about */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: #c1dcdc;
+  width: 100%;
+  align-items: center;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-title h1 {
+  font-size: 32px;
+}
+.about-title p {
+  font-size: 18px;
+}
+
+.about-card {
+  display: flex;
+  width: 90%;
+  margin: 30px 0;
+  gap: 20px;
+}
+
+.abouts-cards {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  flex: 1;
+}
+
+.abouts-cards i {
+  font-size: 40px;
+}
+.abouts-cards p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.abouts-cards span {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/* kategoriler */
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  gap:10px;
+  margin: 20px auto;
+}
+
+.categories-title {
+  margin-bottom: 30px;
+}
+
+.categories-title p {
+  text-align: center;
+}
+.categories-title h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.categories-banners {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.categories-banners-card {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.categories-banners-card img {
+  width: 100%;
+}
+
+.categories-banners-card h1 {
+  text-align: center;
+}
+
+.categories-banners-card span {
+  text-align: center;
+  width: 100%;
+  color: gray;
+}
+
+/* footer */
+.footer{
+ 
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #c1dcdc;
+}
+
+.footer-left{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-title{
+  font-family: "Indie flower";
+  font-size: 40px;
+  font-weight: 700;
+}
+.footer-left p{
+  color: gray;
+  
+}
+
+.footer-left .foter-icon i{
+  border: 2px solid gray;
+  font-size: 30px;
+  margin-right: 10px;
+  color: gray;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.footer-right{
+
+  display: flex;
+  gap: 25px;
+  font-size: 14px;
+}
+
+.footer-right ul li{
+  list-style: none;
+  cursor: pointer;
+}
+.footer-right ul li:hover{
+  transform: scale(1.1);
+}
+
+.footer-right ul li:nth-child(1) {
+  font-weight: 800;
+}
+
